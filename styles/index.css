@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700&display=swap");
+
+* {
+    font-family: Ubuntu !important;
+    -webkit-font-smoothing: antialiased !important;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; 
+    margin:0;
+    background: #1C24EC !important;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    margin: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.bg-color {
+    min-height: 500px;
+    max-height: auto;
+    background: #1C24EC;
+}
+
+.evento {
+    margin-top: 128px;
+}
+
+.evento h1 {
+    color: #FF9494;
+}
+
+.evento p {
+    color: #FFF;
+    font-size: 1.5rem;
+}
+
+.evento button {
+    width: 168px;
+    background: #FF9494;
+    border-radius: 8px;
+    height: auto;
+    font-weight: bolder;
+    font-size: 1rem;
+    text-align: center;
+    color: #1C24EC;
+    cursor: pointer;
+	border: none;
+	cursor: pointer;
+    padding: 12px;
+    outline: none !important;
+    margin-bottom: 36px;
+}
+
+.evento button:hover {
+    background: #FF7070;
+}
+
+.card {
+    width: 100% !important;
+    margin-bottom: 32px;
+}
+
+.header {
+    background: #1C24EC;
+}
+
+.footer {
+    background: #000;
+    color: #FFF;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.footer-center {
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.col-h1 h1 {
+    font-size: 4rem
+    ;
+}
+
+.col-lg-7 h1 {
+    font-size: 3.125rem;
+}
+
+.logo img {
+    width: 160px;
+    height: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.nav-link {
+	font-weight: bold;
+	color: #FFF;
+}
+
+.nav-link:hover {
+    color: #FF9494;
+}
+
+.nav-link.active {
+    color: #FF9494;
+	cursor: default;
+}
+
+.nav-link.active img {
+    width: 100%;
+    height: 4px;
+	opacity: 1.0;
+}
+
+.hover-menu {
+    margin-top: 4px;
+	opacity: 0.0;
+}
+
+.nav-display {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner {
+    width: auto;
+    height: 500px;
+    padding-bottom: 48px;
+}
+
+
+#tab-content {
+    margin-top: 12px;
+}
+
+@media (max-width: 1106px) {
+    .banner {
+        width: 450px;
+        height: auto;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .evento {
+        margin-top: 0;
+    }
+
+    .banner {
+        height: 500px;
+        margin-top: 32px;
+    }
+
+    .col-img {
+        text-align: center;
+    }
+
+    .bg-color {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 561px) {
+    .banner {
+        width: 400px;
+        height: auto;
+    }
+}
