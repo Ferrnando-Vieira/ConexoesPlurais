@@ -28,14 +28,32 @@ footer {
 }
 
 .card-img-top {
-    max-height: 200px;
+    max-height: 250px;
     max-width: auto;
+    padding: 4px;
+    border-radius: 8px !important;
+}
+
+.col-lg-12 {
+    margin-top: 16px;
 }
 
 .bg-color {
     min-height: 500px;
     max-height: auto;
     background: #1C24EC;
+}
+
+.bg-green {
+    background-color: #1CEC88 !important;
+}
+
+.bg-yellow {
+    background-color: #FFF200 !important;
+}
+
+.bg-salmon {
+    background-color: #FF9494 !important;
 }
 
 .evento {
@@ -60,19 +78,27 @@ footer {
     padding: 12px !important;
     margin-bottom: 36px !important;
     color: #1C24EC !important;
-}
-
-.btn-primary-up {
     background: #FF9494 !important;
-    font-weight: bolder !important;
-    font-size: 1rem !important;
     outline: 0 !important;
-    color: #FFF !important;
     border: none !important;
 }
 
-.btn-primary-up:hover {
+.evento a:hover {
     background: #FF7070 !important;
+}
+
+.btn-primary-up {
+    background: #FFF !important;
+    font-weight: bolder !important;
+    font-size: 1rem !important;
+    outline: 0 !important;
+    color: #1C24EC !important;
+    border: none !important;
+    padding: 8px;
+}
+
+.btn-primary-up:hover {
+    background: #E1E1E1 !important;
 }
 
 
@@ -82,12 +108,16 @@ footer {
     height: auto;
 }
 
+.card-text, .card-title {
+    text-align: center;
+}
+
 .card-text {
-    text-align: justify;
+    color: #000;
 }
 
 .card-title {
-    text-align: center;
+    color: #1C24EC;
 }
 
 .header {
