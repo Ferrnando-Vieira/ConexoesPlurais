@@ -239,6 +239,14 @@ footer {
     margin-top: 12px;
 }
 
+#symplaw {
+    min-height: 400px;
+}
+
+#sympla-widget-773723 {
+    margin: auto;
+}
+
 @media (max-width: 1238px) {
     .flip-card {
         height: 368px;
