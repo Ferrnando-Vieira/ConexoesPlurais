@@ -28,7 +28,7 @@
             <div class="tab-menu">
               <ul class="nav justify-content-end align-middle" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                  <a class="nav-link active" onClick="hide_event()" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
                     <div class="nav-display">
                       <span>&nbsp;Home&nbsp;</span>
                       <img class="hover-menu" src="assets/hover_menu.png">
@@ -36,7 +36,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="evento-tab" data-toggle="tab" href="#evento" role="tab" aria-controls="evento" aria-selected="false">
+                  <a class="nav-link" onClick="show_event()" id="evento-tab" data-toggle="tab" href="#evento" role="tab" aria-controls="evento" aria-selected="false">
                     <div class="nav-display">
                       <span>&nbsp;O Evento&nbsp;</span>
                       <img class="hover-menu" src="assets/hover_menu.png">
@@ -44,7 +44,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="palestrantes-tab" data-toggle="tab" href="#palestrantes" role="tab" aria-controls="palestrantes" aria-selected="false">
+                  <a class="nav-link" onClick="hide_event()" id="palestrantes-tab" data-toggle="tab" href="#palestrantes" role="tab" aria-controls="palestrantes" aria-selected="false">
                     <div class="nav-display">
                       <span>&nbsp;Palestrantes&nbsp;</span>
                       <img class="hover-menu" src="assets/hover_menu.png">
@@ -52,7 +52,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="ingressos-tab" data-toggle="tab" href="#ingressos" role="tab" aria-controls="ingressos" aria-selected="false">
+                  <a class="nav-link" onClick="hide_event()" id="ingressos-tab" data-toggle="tab" href="#ingressos" role="tab" aria-controls="ingressos" aria-selected="false">
                     <div class="nav-display">
                       <span>&nbsp;Ingressos&nbsp;</span>
                       <img class="hover-menu" src="assets/hover_menu.png">
@@ -60,7 +60,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="contato-tab" data-toggle="tab" href="#contato" role="tab" aria-controls="contato" aria-selected="false">
+                  <a class="nav-link" onClick="hide_event()" id="contato-tab" data-toggle="tab" href="#contato" role="tab" aria-controls="contato" aria-selected="false">
                     <div class="nav-display">
                       <span>&nbsp;Contato&nbsp;</span>
                       <img class="hover-menu" src="assets/hover_menu.png">
@@ -94,7 +94,7 @@
                   <div class="col-lg-7">
                     <h1>Conexões, pessoas e tecnologia</h1>
                     <p>30 de Janeiro de 2020<br>DTI Digital</p>
-                    <a class="btn btn-primary btn-primary-up" href="#evento">PARTICIPAR</a>
+                    <a class="btn" href="javascript:to_event()">PARTICIPAR</a>
                   </div>
                   <div class="col-lg-2"></div>
                 </div>
@@ -112,27 +112,19 @@
                   <div class="col-lg-7 col-img">
                     <img class="event-img img-responsive" src="assets/o-evento-foto.png">
                   </div>
-                  <div class="col-lg-2"></div>
+                  <div class="col-lg-1"></div>
                 </div>
               </div>
-              <div class="col-lg-5 evento">
+              <div class="col-lg-5">
                 <div class="row">
-                  <div class="col-lg-3"></div>
-                  <div class="flip-card col-lg-7 justify-content-start">
-                      <div class="flip-card-inner">
-                        <div class="flip-card-front p-div">
-                          <h1>O Evento</h1>
-                          <br>
-                          <p>Conexões digitais, tecnologia, novas profissões e exigências do mercado. Os tempos mudaram, e a revolução digital transforma cada vez mais nosso modo de trabalhar.</p>
-                          <p>No Conexões Plurais, convidamos especialistas no mercado digital para compartilharem suas experiências sobre como é trabalhar neste universo: vantagens, desvantagens, desafios e dicas para quem está iniciando a carreira no mercado de startups e empresas de tecnologia.</p>
-                        </div>
-                        <div class="flip-card-back p-div">
-                          <h1>O Painél</h1>
-                          <br>
-                          <p>Conexões digitais, tecnologia, novas profissões e exigências do mercado. Os tempos mudaram, e a revolução digital transforma cada vez mais nosso modo de trabalhar.</p>
-                          <p>No Conexões Plurais, convidamos especialistas no mercado digital para compartilharem suas experiências sobre como é trabalhar neste universo: vantagens, desvantagens, desafios e dicas para quem está iniciando a carreira no mercado de startups e empresas de tecnologia.</p>
-                        </div>
-                    </div>
+                  <div class="col-lg-2"></div>
+                  <div class="col-lg-8">
+                      <div class="p-div justify-content-start">
+                        <h1>O Evento</h1>
+                        <p>Conexões digitais, tecnologia, novas profissões e exigências do mercado. Os tempos mudaram, e a revolução digital transforma cada vez mais nosso modo de trabalhar.</p>
+                        <p>No Conexões Plurais, convidamos especialistas no mercado digital para compartilharem suas experiências sobre como é trabalhar neste universo: vantagens, desvantagens, desafios e dicas para quem está iniciando a carreira no mercado de startups e empresas de tecnologia.</p>
+                        <a class="btn">SAIBA MAIS</a>
+                      </div>
                   </div>
                   <div class="col-lg-2"></div>
                 </div>
@@ -157,7 +149,7 @@
                         <div class="card-body d-flex flex-column">
                           <h5 class="card-title">Isabela Mendes</h5>
                           <p class="card-text">CEO na Surfe Digital</p>
-                          <a href="https://www.linkedin.com/in/isabela-mendes-b4066118/" target="_blank" class="btn mt-auto btn-primary btn-primary-up">LINKEDIN</a>
+                          <a href="https://www.linkedin.com/in/isabela-mendes-b4066118/" target="_blank" class="btn mt-auto btn-primary-up">LINKEDIN</a>
                         </div>
                       </div>
                     </div>
@@ -167,7 +159,7 @@
                         <div class="card-body d-flex flex-column">
                           <h5 class="card-title">Vinícius Soares</h5>
                           <p class="card-text">Sócio e Diretor de Planejamento Criativo e Mídia na @lowinagencia</p>
-                          <a href="https://www.linkedin.com/in/visoares/" target="_blank" class="btn mt-auto btn-primary btn-primary-up">LINKEDIN</a>
+                          <a href="https://www.linkedin.com/in/visoares/" target="_blank" class="btn mt-auto btn-primary-up">LINKEDIN</a>
                         </div>
                       </div>
                     </div>
@@ -177,7 +169,7 @@
                         <div class="card-body d-flex flex-column">
                           <h5 class="card-title">Isabella Ferreira</h5>
                           <p class="card-text">Cofundadora e Educadora no Coletivo Minas Digitais</p>
-                          <a href="https://www.linkedin.com/in/bellajobedo/" target="_blank" class="btn mt-auto btn-primary btn-primary-up">LINKEDIN</a>
+                          <a href="https://www.linkedin.com/in/bellajobedo/" target="_blank" class="btn mt-auto btn-primary-up">LINKEDIN</a>
                         </div>
                       </div>
                     </div>
@@ -187,7 +179,7 @@
                         <div class="card-body d-flex flex-column">
                           <h5 class="card-title">Gleidistone Silva</h5>
                           <p class="card-text">Analista de Marketing de Produto na Bume</p>
-                          <a href="https://www.linkedin.com/in/gleidistonesilva/" target="_blank" class="btn mt-auto btn-primary btn-primary-up">LINKEDIN</a>
+                          <a href="https://www.linkedin.com/in/gleidistonesilva/" target="_blank" class="btn mt-auto btn-primary-up">LINKEDIN</a>
                         </div>
                       </div>
                     </div>
@@ -201,7 +193,7 @@
                         <div class="card-body d-flex flex-column">
                           <h5 class="card-title">Bárbara Fraga Aguilar</h5>
                           <p class="card-text">Front End Developer na MaxMilhas</p>
-                          <a href="https://www.linkedin.com/in/barbara-aguilar/" target="_blank" class="btn mt-auto btn-primary btn-primary-up">LINKEDIN</a>
+                          <a href="https://www.linkedin.com/in/barbara-aguilar/" target="_blank" class="btn mt-auto btn-primary-up">LINKEDIN</a>
                         </div>
                       </div>
                     </div>
@@ -211,7 +203,7 @@
                         <div class="card-body d-flex flex-column">
                           <h5 class="card-title">Vanessa Gomes</h5>
                           <p class="card-text">Executiva de Vendas na Siteware</p>
-                          <a href="https://www.linkedin.com/in/vanessaalmeidagomes" target="_blank" class="btn mt-auto btn-primary btn-primary-up">LINKEDIN</a>
+                          <a href="https://www.linkedin.com/in/vanessaalmeidagomes" target="_blank" class="btn mt-auto btn-primary-up">LINKEDIN</a>
                         </div>
                       </div>
                     </div>
@@ -221,7 +213,7 @@
                         <div class="card-body d-flex flex-column">
                           <h5 class="card-title">Giovana Villari</h5>
                           <p class="card-text">Analista de RH e Organizadora de Cultura</p>
-                          <a href="https://www.linkedin.com/in/giovanavillari/" target="_blank" class="btn mt-auto btn-primary btn-primary-up">LINKEDIN</a>
+                          <a href="https://www.linkedin.com/in/giovanavillari/" target="_blank" class="btn mt-auto btn-primary-up">LINKEDIN</a>
                         </div>
                       </div>
                     </div>
@@ -287,13 +279,13 @@
         </div>
       </footer>
 
+    <script src="js/index.js"></script>  
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
             crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
             integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
             crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
     <script src="https://www.sympla.com.br/js/sympla.widget-pt.js/773723"></script>
   </body>
 </html>

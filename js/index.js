@@ -11,3 +11,27 @@ var x = setInterval(function() {
     document.getElementById("minute-count").innerHTML=minutes;
     document.getElementById("second-count").innerHTML=seconds;
 }, 1000);
+
+function to_event() {
+    const now = document.getElementById('home');
+    now.classList.remove('active');
+    now.classList.remove('show');
+    document.getElementById('evento').setAttribute('class', 'tb-pane active show');
+
+    const link = document.getElementById('home-tab');
+    link.classList.remove('active');
+    link.classList.remove('show');
+    document.getElementById('home-tab').setAttribute('aria-selected', 'false');
+    document.getElementById('evento-tab').setAttribute('aria-selected', 'true');
+    document.getElementById('evento-tab').setAttribute('class', 'nav-link active show');
+
+    show_event();
+}
+
+function hide_event() {
+    document.getElementById('evento').style.display='none'; 
+}
+
+function show_event() {
+    document.getElementById('evento').style.display='block'; 
+}
