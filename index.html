@@ -28,7 +28,15 @@
             <div class="tab-menu">
               <ul class="nav justify-content-end align-middle" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link active" id="evento-tab" data-toggle="tab" href="#evento" role="tab" aria-controls="evento" aria-selected="true">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                    <div class="nav-display">
+                      <span>&nbsp;Home&nbsp;</span>
+                      <img class="hover-menu" src="assets/hover_menu.png">
+                    </div>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="evento-tab" data-toggle="tab" href="#evento" role="tab" aria-controls="evento" aria-selected="false">
                     <div class="nav-display">
                       <span>&nbsp;O Evento&nbsp;</span>
                       <img class="hover-menu" src="assets/hover_menu.png">
@@ -69,6 +77,31 @@
 
       <!-- Conteúdo dos Menus -->
       <main class="tab-content">
+
+          <!-- Início -->
+          <div class="tab-pane" id="home">
+            <div class="row bg-color">
+              <div class="col-lg-6 order-lg-2">
+                <div class="col-lg-3"></div>
+                  <div class="col-lg-6 col-img">
+                    <img class="banner img-responsive" src="assets/banner.png">
+                  </div>
+                  <div class="col-lg-3"></div>
+              </div>
+              <div class="col-lg-6 order-lg-1 evento">
+                <div class="row">
+                  <div class="col-lg-3"></div>
+                  <div class="col-lg-7">
+                    <h1>Conexões, pessoas e tecnologia</h1>
+                    <p>30 de Janeiro de 2020<br>DTI Digital</p>
+                    <a class="btn btn-primary btn-primary-up">PARTICIPAR</a>
+                  </div>
+                  <div class="col-lg-2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- Evento -->
           <div class="tab-pane active" id="evento">
             <div class="row bg-color">
@@ -162,24 +195,8 @@
           <!-- Ingressos -->
            <div class="tab-pane" id="ingressos">
             <div class="row bg-color">
-              <div class="col-lg-6 order-lg-2">
-                <div class="col-lg-3"></div>
-                  <div class="col-lg-6 col-img">
-                    <img class="banner img-responsive" src="assets/banner.png">
-                  </div>
-                  <div class="col-lg-3"></div>
-              </div>
-              <div class="col-lg-6 order-lg-1 evento">
-                <div class="row">
-                  <div class="col-lg-3"></div>
-                  <div class="col-lg-7">
-                    <h1>Conexões, pessoas e tecnologia</h1>
-                    <p>30 de Janeiro de 2020<br>DTI Digital</p>
-                    <a class="btn btn-primary btn-primary-up">PARTICIPAR</a>
-                  </div>
-                  <div class="col-lg-2"></div>
-                </div>
-              </div>
+             
+              
             </div>
           </div>
   
