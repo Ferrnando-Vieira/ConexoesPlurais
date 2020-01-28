@@ -67,9 +67,21 @@ footer {
     background: #FF7070;
 }
 
+.btn-primary-up {
+    border: none !important;
+    background: #FF9494 !important;
+    font-weight: bolder !important;
+    font-size: 1rem !important;
+}
+
 .card {
     width: 100% !important;
     margin-bottom: 32px;
+    height: auto;
+}
+
+.card-text {
+    text-align: justify;
 }
 
 .header {
@@ -142,8 +154,7 @@ footer {
     padding-bottom: 48px;
 }
 
-
-#tab-content {
+.tab-menu {
     margin-top: 12px;
 }
 
