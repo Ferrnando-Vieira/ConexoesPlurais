@@ -104,7 +104,7 @@ footer {
 
 .card {
     width: 100% !important;
-    margin-bottom: 32px;
+    margin-bottom: 46px;
     height: auto;
 }
 
@@ -228,6 +228,14 @@ footer {
     .card {
         width: 50% !important;
         margin-left: 25%;
+    }
+
+    .carousel-item {
+        display: block !important;
+    }
+
+    .carousel-control-next, .carousel-control-prev, .carousel-indicators {
+        display: none !important;
     }
 }
 
