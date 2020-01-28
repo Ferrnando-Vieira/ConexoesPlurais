@@ -186,6 +186,12 @@ footer {
     padding-bottom: 48px;
 }
 
+.event-img {
+    width: auto;
+    height: 500px;
+    border-radius: 8px;
+}
+
 .tab-menu {
     margin-top: 12px;
 }
@@ -203,7 +209,7 @@ footer {
         margin-top: 0;
     }
 
-    .banner {
+    .banner, .event-img {
         height: 500px;
         margin-top: 32px;
     }
@@ -236,7 +242,7 @@ footer {
 }
 
 @media (max-width: 561px) {
-    .banner {
+    .banner, .event-img {
         width: 100%;
         height: auto;
     }
