@@ -18,24 +18,26 @@ const button = document.getElementById('btn-change');
 
 function to_painel() {
     change.style.transform='rotateY(360deg)';
-    setTimeout(function(){ to_info() }, 800);
+    setTimeout(function(){ to_info() }, 700);
     button.style.pointerEvents='none';
 }
 
 function to_info() {
     if (now === 0) {
+        document.getElementById('img-event').setAttribute('src', 'assets/o-painel-foto.png');
         document.getElementById('anim-1').innerHTML='O Painél';
         document.getElementById('anim-2').innerHTML='O evento será dividido em dois Painéis. O primeiro o qual os convidados são CEOs, sócios e diretores de empresas no meio digital.';
         document.getElementById('anim-3').innerHTML='O segundo será sobre os profissionais digitais, que compartilharão suas experiências no mercado digital.';
         now = 1;
     }
     else {
+        document.getElementById('img-event').setAttribute('src', 'assets/o-evento-foto.png');
         document.getElementById('anim-1').innerHTML='O Evento';
         document.getElementById('anim-2').innerHTML='Conexões digitais, tecnologia, novas profissões e exigências do mercado. Os tempos mudaram, e a revolução digital transforma cada vez mais nosso modo de trabalhar.';
         document.getElementById('anim-3').innerHTML='No Conexões Plurais, convidamos especialistas no mercado digital para compartilharem suas experiências sobre como é trabalhar neste universo: vantagens, desvantagens, desafios e dicas para quem está iniciando a carreira no mercado de startups e empresas de tecnologia.';
         now = 0;
     }
-    setTimeout(function(){ to_zero() }, 800);
+    setTimeout(function(){ to_zero() }, 900);
 }
 
 function to_zero() {

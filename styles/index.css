@@ -58,7 +58,7 @@ footer {
     font-size: 1.5rem;
 }
 
-.evento a, .p-div a {
+.evento .btn, .p-div a {
     width: 168px !important;
     border-radius: 8px !important;
     height: auto !important;
@@ -72,7 +72,7 @@ footer {
     border: none !important;
 }
 
-.evento a:hover, .p-div a:hover {
+.evento .btn:hover, .p-div a:hover {
     background: #FF7070 !important;
 }
 
