@@ -14,7 +14,7 @@
     <!-- Icones Favicon -->
 
   </head>
-  <body class="container-fluid">
+  <body id="body" class="container-fluid">
 
       <!-- Menu de Navegação -->
       <header>
@@ -28,7 +28,7 @@
             <div class="tab-menu">
               <ul class="nav justify-content-end align-middle" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link active" onClick="hide_ticket()" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
+                  <a class="nav-link active" onClick="hide_ticket(1)" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">
                     <div class="nav-display">
                       <span>&nbsp;Home&nbsp;</span>
                       <img class="hover-menu" src="assets/hover_menu.png">
@@ -36,7 +36,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" onClick="hide_ticket()" id="evento-tab" data-toggle="tab" href="#evento" role="tab" aria-controls="evento" aria-selected="false">
+                  <a class="nav-link" onClick="hide_ticket(2)" id="evento-tab" data-toggle="tab" href="#evento" role="tab" aria-controls="evento" aria-selected="false">
                     <div class="nav-display">
                       <span>&nbsp;O Evento&nbsp;</span>
                       <img class="hover-menu" src="assets/hover_menu.png">
@@ -44,7 +44,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" onClick="hide_ticket()" id="palestrantes-tab" data-toggle="tab" href="#palestrantes" role="tab" aria-controls="palestrantes" aria-selected="false">
+                  <a class="nav-link" onClick="hide_ticket(3)" id="palestrantes-tab" data-toggle="tab" href="#palestrantes" role="tab" aria-controls="palestrantes" aria-selected="false">
                     <div class="nav-display">
                       <span>&nbsp;Palestrantes&nbsp;</span>
                       <img class="hover-menu" src="assets/hover_menu.png">
@@ -60,7 +60,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" onClick="hide_ticket()" id="parceiros-tab" data-toggle="tab" href="#parceiros" role="tab" aria-controls="parceiros" aria-selected="false">
+                  <a class="nav-link" onClick="hide_ticket(4)" id="parceiros-tab" data-toggle="tab" href="#parceiros" role="tab" aria-controls="parceiros" aria-selected="false">
                     <div class="nav-display">
                       <span>&nbsp;Parceiros&nbsp;</span>
                       <img class="hover-menu" src="assets/hover_menu.png">
@@ -223,7 +223,7 @@
                         <img class="card-img-top" src="assets/perfil/giovana_villari.png" alt="Giovana Villari">
                         <div class="card-body d-flex flex-column">
                           <h5 class="card-title">Giovana Villari</h5>
-                          <p class="card-text">Analista de RH e Organizadora de Cultura na Smartt Botter</p>
+                          <p class="card-text">Analista de RH e Organizadora Cultural na Smartt Botter</p>
                           <a href="https://www.linkedin.com/in/giovanavillari/" target="_blank" class="btn mt-auto btn-primary-up">LINKEDIN</a>
                         </div>
                       </div>
@@ -262,7 +262,8 @@
                         <strong>Informações adicionais:</strong><br>
                         1. Vamos fornecer certificado de participação. <br>
                         2. Faremos um sorteio entre os participantes de uma tattoo no valor de 600 reais com o tatuador <a href="https://www.instagram.com/jean.vivaz/" id="link_perfil" target="_blank" rel="noopener noreferrer">Jean Vivaz</a>. <br>
-                        3. Aproveite o evento para trazer seu currículo e fazer seu networking!
+                        3. Aproveite o evento para trazer seu currículo e fazer seu networking!<br>
+                        4. Todo o lucro será destinado as vítimas das chuvas constantes em BH e Região.
                       </p>
                     </div>
                   </div>
@@ -284,8 +285,40 @@
   
            <!-- parceiros -->
            <div class="tab-pane" id="parceiros">
-            <div class="row bg-color">
-              
+            <div class="row bg-color justify-content-center" style="padding-top: 16px;">
+                <div class="col-lg-3">
+                  <a href="https://www.pucminas.br/" style="text-decoration: none;" target="_blank" title="Ir para Puc Minas">
+                  <div class="card bg-salmon patron">
+                    <div class="card-header">Apoio</div>
+                    <img class="card-img-top" src="assets/puc.png" alt="PUC Minas">
+                    <div class="card-body d-flex flex-column">
+                      <h5 class="card-title">PUC Minas</h5>
+                    </div>
+                  </div>
+                  </a>
+                </div>
+                <div class="col-lg-3">
+                  <a href="https://surfedigital.io/" style="text-decoration: none;" target="_blank" title="Ir para Surfe Digital">
+                    <div class="card bg-green patron">
+                      <div class="card-header">Patrocínio</div>
+                      <img class="card-img-top" src="assets/surfe.png" alt="Surfe Digital">
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Surfe Digital</h5>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-3">
+                  <a href="https://www.instagram.com/jean.vivaz/" style="text-decoration: none;" target="_blank" title="Ir para Vivaz Studio">
+                    <div class="card bg-salmon patron">
+                      <div class="card-header">Apoio</div>
+                      <img class="card-img-top" src="assets/vivaz.png" alt="Vivaz Studio">
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Vivaz Studio</h5>
+                      </div>
+                    </div>
+                  </a>
+              </div>
             </div>
           </div>
   
@@ -319,7 +352,23 @@
             </div>
           </div>
           <div class="col-lg-4">
-
+            <div class="row justify-content-center" style="padding-top: 24px;">
+              <a href="https://instagram.com/conex_oesplurais/" target="_blank">
+                <div title="Nos Siga no Instagram" class="a-midia">
+                  <img src="assets/Vector-3.png">
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/conex%C3%B5es-plurais-8433261a1/" target="_blank">
+                <div title="Nos Siga no LinkedIn" class="a-midia">
+                  <img src="assets/Vector-2.png">
+                </div>
+              </a>
+              <a href="https://www.facebook.com/Conex%C3%B5es-Plurais-114026363479371/?eid=ARDsOfeG8Sa2dk4Us5swoIuxZ6Y_OTRykGfGZdT0JbbzL2sIB3UYm66EggpCkyZmv-O4na4dZ4SBgnWe" target="_blank">
+                <div title="Nos Siga no Facebook" class="a-midia">
+                  <img src="assets/Vector-4.png">
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </footer>

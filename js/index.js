@@ -67,10 +67,25 @@ function to_ticket() {
     document.getElementById('ingressos-tab').setAttribute('class', 'nav-link active show');
 }
 
-function hide_ticket() {
+function hide_ticket(val) {
     document.getElementById('ingressos').style.display='none'; 
+    switch (val) {
+        case 1:
+            document.getElementById('body').style.background='#1C24EC';
+            break;
+        case 2:
+            document.getElementById('body').style.background='#FFF';
+            break;
+        case 3:
+            document.getElementById('body').style.background='#1C24EC';
+            break;
+        case 4:
+            document.getElementById('body').style.background='#1C24EC';
+            break;
+    };
 }
 
 function show_ticket() {
     document.getElementById('ingressos').style.display='block'; 
+    document.getElementById('body').style.background='#FFD9D9';
 }
