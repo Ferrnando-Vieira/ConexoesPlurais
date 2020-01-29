@@ -12,20 +12,41 @@ var x = setInterval(function() {
     document.getElementById('second-count').innerHTML=seconds;
 }, 1000);
 
-
+var now = 0;
+const change = document.getElementById('card-fliping');
+const button = document.getElementById('btn-change');
 
 function to_painel() {
-    const change = document.getElementById('card-fliping');
-    var x = document.getElementById('card-fliping');
-    change.style.transform='rotateY(180deg)';
-    x.addEventListener('transitionend', on_off());
+    change.style.transform='rotateY(360deg)';
+    setTimeout(function(){ to_info() }, 800);
+    button.style.pointerEvents='none';
 }
 
-function on_off() {
-    const old = document.getElementById('div-event');
-    old.style.display='none';
-    const ne = document.getElementById('div-painel');
-    ne.style.display='block';
+function to_info() {
+    if (now === 0) {
+        document.getElementById('anim-1').innerHTML='O Painél';
+        document.getElementById('anim-2').innerHTML='O evento será dividido em dois Painéis. O primeiro o qual os convidados são CEOs, sócios e diretores de empresas no meio digital.';
+        document.getElementById('anim-3').innerHTML='O segundo será sobre os profissionais digitais, que compartilharão suas experiências no mercado digital.';
+        now = 1;
+    }
+    else {
+        document.getElementById('anim-1').innerHTML='O Evento';
+        document.getElementById('anim-2').innerHTML='Conexões digitais, tecnologia, novas profissões e exigências do mercado. Os tempos mudaram, e a revolução digital transforma cada vez mais nosso modo de trabalhar.';
+        document.getElementById('anim-3').innerHTML='No Conexões Plurais, convidamos especialistas no mercado digital para compartilharem suas experiências sobre como é trabalhar neste universo: vantagens, desvantagens, desafios e dicas para quem está iniciando a carreira no mercado de startups e empresas de tecnologia.';
+        now = 0;
+    }
+    setTimeout(function(){ to_zero() }, 800);
+}
+
+function to_zero() {
+    change.style.transitionDuration='0s';
+    change.style.transform='rotateY(0)';
+    setTimeout(function(){ to_reset() }, 100);
+}
+
+function to_reset() {
+    change.style.transitionDuration='1.6s';
+    button.style.pointerEvents='auto';
 }
 
 function to_event() {
