@@ -25,7 +25,7 @@ function to_painel() {
 function to_info() {
     if (now === 0) {
         document.getElementById('img-event').setAttribute('src', 'assets/o-painel-foto.png');
-        document.getElementById('anim-1').innerHTML='O Painél';
+        document.getElementById('anim-1').innerHTML='O Painel';
         document.getElementById('anim-2').innerHTML='O evento será dividido em dois Painéis. O primeiro o qual os convidados são CEOs, sócios e diretores de empresas no meio digital.';
         document.getElementById('anim-3').innerHTML='O segundo será sobre os profissionais digitais, que compartilharão suas experiências no mercado digital.';
         now = 1;
