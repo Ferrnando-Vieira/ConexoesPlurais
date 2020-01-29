@@ -53,6 +53,7 @@ function to_reset() {
 
 function to_ticket() {
     document.getElementById('ingressos').style.display='block'; 
+    document.getElementById('body').style.background='#FFD9D9';
 
     const now = document.getElementById('home');
     now.classList.remove('active');
