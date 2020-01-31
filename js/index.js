@@ -5,11 +5,20 @@ var x = setInterval(function() {
     var days = Math.floor(t / (1000 * 60 * 60 * 24)); 
     var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60)); 
     var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60)); 
-    var seconds = Math.floor((t % (1000 * 60)) / 1000); 
-    document.getElementById('day-count').innerHTML=days;
-    document.getElementById('hour-count').innerHTML=hours;
-    document.getElementById('minute-count').innerHTML=minutes;
-    document.getElementById('second-count').innerHTML=seconds;
+    var seconds = Math.floor((t % (1000 * 60)) / 1000);
+    if (days >= 0) {
+        document.getElementById('day-count').innerHTML=days;
+        document.getElementById('hour-count').innerHTML=hours;
+        document.getElementById('minute-count').innerHTML=minutes;
+        document.getElementById('second-count').innerHTML=seconds;
+    }
+    else {
+        document.getElementById('day-count').innerHTML='00';
+        document.getElementById('hour-count').innerHTML='00';
+        document.getElementById('minute-count').innerHTML='00';
+        document.getElementById('second-count').innerHTML='00';
+        clearInterval(x);
+    }
 }, 1000);
 
 var now = 0;
